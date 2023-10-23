@@ -1,12 +1,17 @@
 //broken screensaver concept
 PVector LeonSKennedy1;
 PVector AshelyGraham2;
+PVector LuisS1;
+PVector AdaWong2;
 //screensaver
 void setup(){
   size(666, 666);
   background(0);
   LeonSKennedy1 = new PVector (456, 87);
   AshelyGraham2 = new PVector (156, 500);
+  LuisS1 = new PVector (87, 190);
+  AdaWong2 = new PVector (367, 178);
+ 
 }
 
 //two circles going from left to right
@@ -21,7 +26,12 @@ void draw(){
   println(AshelyGraham2);
   
   fill(254,100);
-  square(87, 190, 88);
-  square(367, 178, 25);
+  square(LuisS1.x, LuisS1.y, 88);
+  square(AdaWong2.x, AdaWong2.y, 25);
+  
+  
+  float animationSpeed = 0.05;
+  LuisS1.x = cos(frameCount * animationSpeed)*256.0;
+  AdaWong2.y = cos(frameCount * animationSpeed)*256.0;
   
 }
