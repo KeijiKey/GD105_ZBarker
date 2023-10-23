@@ -1,44 +1,25 @@
-int startx;
-int starty;
-int endy;
-
-boolean movingRight;
+PVector LeonMotion1;
+PVector AshelyMotion2;
 //screensaver
 void setup(){
   size(666, 666);
-  
-  startx = 456;
-  starty = 87;
-  
-  movingRight = false;
+  background(0);
+  LeonMotion1 = new PVector (456, 87);
+  AshelyMotion2 = new PVector (156, 500);
 }
 
 //two circles going from left to right
 void draw(){
   background(0);
   fill(167, 100);
-  circle(startx, starty, 78);
-  circle(156, 500, 78);
+  circle(LeonMotion1.x, LeonMotion1.y, 78);
+  circle(AshelyMotion2.x, AshelyMotion2.y, 78);
+  LeonMotion1.x += 2;
+  println(LeonMotion1);
+  AshelyMotion2.x += 2;
+  println(AshelyMotion2);
   
-  if (movingRight == false)
-  {
-    startx = startx - 10;
-  }
-    if (movingRight == true)
-  {
-    startx = startx + 10;
-  }
-  
-  println(startx);
-  if (startx < 80)
-  {
-    movingRight = true;
-  }
-  if (startx > 400)
-  {
-    movingRight = false;
-  }
+  fill(254,100);
+  square(87, 190, 88);
+  square(367, 178, 25);
 }
-
-//test
-//linearMotion
