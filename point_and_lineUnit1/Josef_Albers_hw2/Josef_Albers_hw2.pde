@@ -10,5 +10,5 @@ void draw(){
   square(255, 255, 200);
   noFill();
   square(255, 555, 190);
-  square(145, 555, 170);
+  square(92, 555, 170);
 }
