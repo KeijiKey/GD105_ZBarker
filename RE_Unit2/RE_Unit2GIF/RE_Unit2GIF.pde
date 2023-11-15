@@ -3,6 +3,7 @@ PVector Wesker;
 PVector Spain;
 PVector RC;
 PVector DiamondK;
+PVector SpadeK;
 
 void setup(){
   background(255);
@@ -12,8 +13,10 @@ void setup(){
   Spain = new PVector (274, 10);
   RC = new PVector (30, 30);
   DiamondK = new PVector (167, 181);
+  SpadeK = new PVector (310, 115);
 }
 
+//shapes
 void draw(){
   background(22);
   translate(300, 300);
@@ -29,19 +32,22 @@ void draw(){
   square(plaga.x, Wesker.y, 50);
   resetMatrix();
   
-  //text
-  translate(50, 50);
+//text
+  translate(100, 100);
   fill(243);
   textSize(22);
   text("No where to run Agent Kennedy", RC.x, RC.y);
-  textSize(22);
+  textSize(20);
   text("Leave the girl, she's lost no matter what", DiamondK.x, DiamondK.y);
+  textSize(24);
+  text("I'm gonna get you home safe", SpadeK.x, SpadeK. y);
   
-  //animation
+//animation
   float animationSpeed = 0.02;
   plaga.x = cos(frameCount * animationSpeed)*256.0;
   Wesker.y = sin(frameCount * animationSpeed)*256.0;
   RC.x = cos(frameCount * animationSpeed)*256.0;
   RC.y = sin(frameCount * animationSpeed)*256.0;
   DiamondK.y = cos(frameCount * animationSpeed)*256.0;
+  SpadeK.x = sin(frameCount * animationSpeed)*256.0;
 }
