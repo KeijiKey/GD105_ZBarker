@@ -23,6 +23,5 @@ void draw(){
   //square #3
   fill(246, 28, 26, 152);
   circle(212, 455, 67);
-  
   }
 }
