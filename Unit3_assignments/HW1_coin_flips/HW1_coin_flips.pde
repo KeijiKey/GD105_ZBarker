@@ -21,11 +21,11 @@ void setup(){
   plane = loadImage("zeplane.png");
   
   evil5 = true;
-  evil5 = random(2) < 1;
+  evil5 = random(2) < 0.5;
   evil6 = false;
-  evil6 = random(1) < 0;
+  evil6 = random(1) < 0.5;
   evil7 = true;
-  evil7 = random(2) < 1;
+  evil7 = random(0) < 0.5;
 }
 
 void draw(){
@@ -41,8 +41,8 @@ void draw(){
     image(asteroid, -149, 316, 194, 267);
   }
   if (evil6) {
-    image(tree, 78, 0, 56, 40);
-    image(bus, 73, 43, 14, 112);
+    image(tree, -56, -560, -241, 240);
+    image(bus, -160, -90, 196, 112);
   }
   else {
     image(lava, 295, -551, 216, 363);
