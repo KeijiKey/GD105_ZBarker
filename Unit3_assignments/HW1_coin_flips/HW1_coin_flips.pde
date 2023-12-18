@@ -17,7 +17,7 @@ void setup(){
   lava = loadImage("thelava.png");
   tree = loadImage("lovelytree.png");
   bus = loadImage("uglybus.png");
-  plane =loadImage("bigplane.png");
+  plane = loadImage("zeplane.png");
   
   evil5 = true;
   evil5 = random(2) < 1;
@@ -49,4 +49,8 @@ void draw(){
   if (evil7) {
     image(cryingcat, 0, 0, 10, 450);
     image(moon, 0, 0, 66, 66);
+  }
+  else {
+    image(plane, 44, 44, 120, 345);
+  }
 }
