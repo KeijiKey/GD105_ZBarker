@@ -30,8 +30,9 @@ void draw(){
   square(AdaWong2.x, AdaWong2.y, 25);
   
   
-  float animationSpeed = 0.05;
+  float animationSpeed = 0.03;
   LuisS1.x = cos(frameCount * animationSpeed)*256.0;
   AdaWong2.y = cos(frameCount * animationSpeed)*256.0;
-  
+  LeonSKennedy1.x = sin(frameCount * animationSpeed)*256.0;
+  AshelyGraham2.y = sin(frameCount * animationSpeed)*256.0;
 }
