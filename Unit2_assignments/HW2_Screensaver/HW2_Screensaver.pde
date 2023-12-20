@@ -3,10 +3,15 @@ PVector LeonSKennedy1;
 PVector AshelyGraham2;
 PVector LuisS1;
 PVector AdaWong2;
+PImage tvirus;
+PImage mrX;
 //screensaver
 void setup(){
   size(666, 666);
   background(0);
+  translate(width*4, height*4);
+  scale(4);
+  mrX = loadImage("mr.x.png");
   LeonSKennedy1 = new PVector (456, 87);
   AshelyGraham2 = new PVector (156, 500);
   LuisS1 = new PVector (87, 190);
@@ -33,6 +38,6 @@ void draw(){
   float animationSpeed = 0.03;
   LuisS1.x = cos(frameCount * animationSpeed)*256.0;
   AdaWong2.y = cos(frameCount * animationSpeed)*256.0;
-  LeonSKennedy1.x = sin(frameCount * animationSpeed)*256.0;
-  AshelyGraham2.y = sin(frameCount * animationSpeed)*256.0;
+  LeonSKennedy1.x = cos(frameCount * animationSpeed)*256.0;
+  AshelyGraham2.x = cos(frameCount * animationSpeed)*256.0;
 }
