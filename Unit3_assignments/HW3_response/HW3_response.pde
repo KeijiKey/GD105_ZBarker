@@ -1,3 +1,4 @@
+//inspiriation https://www.artsy.net/artwork/robert-motherwell-london-series-ii-untitled-orange-slash-pink
 void setup(){
   size(600, 600);
   background(255);
