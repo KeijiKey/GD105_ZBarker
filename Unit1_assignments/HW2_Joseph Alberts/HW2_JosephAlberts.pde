@@ -6,6 +6,7 @@ void setup(){
 }
 
 void draw(){
+  noStroke();
   background(255);
   fill(234, 216, 17, 327);
   square(72, 43, 451);
