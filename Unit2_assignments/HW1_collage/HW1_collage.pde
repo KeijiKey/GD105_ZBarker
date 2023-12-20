@@ -6,7 +6,6 @@ void setup(){
   size(474, 265);
   Photo = loadImage("ResidentE4.jpg");
   Ball = loadImage("babseall2.jpg");
-  Check = loadFont("LucidaSans-Italic-20.vlw");
 }
 
 void draw(){
